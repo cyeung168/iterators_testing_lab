@@ -1,4 +1,4 @@
-require_relative './spec_helper'
+erequire_relative './spec_helper'
 
 describe "Iterators" do
 
@@ -139,7 +139,7 @@ end
   #delete_if
   describe "hash method - #delete_if" do
     it "should delete key/value pair for any value equal to 100" do
-      expect(@hash.delete_if {|key, value| value == 100}).to eq(:b=>200)
+      expect(@hash.delete_if {|key, value| value == 100}).to eq({:b=>200})
     end
   end
 
